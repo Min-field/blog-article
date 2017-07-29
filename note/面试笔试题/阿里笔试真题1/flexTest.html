@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo of flex of css3</title>
+    <style>
+        .chart{
+            width: 500px;
+            height: 400px;
+            border: 1px solid black;
+            margin: 50px auto;
+            position: relative;
+            /*display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: flex-end;*/
+        }
+        .chart-item{
+            position: absolute;
+            bottom: 0;
+            width: 15%;
+        }
+        .chart-item:nth-child(1){
+            left: 0;
+            height: 30%; 
+            background: #f00;
+        }
+        .chart-item:nth-child(2){
+            height: 80%; 
+            background: #ddd;
+        }
+        .chart-item:nth-child(3){
+            height: 70%;
+            background: #0fd;
+        }
+        .chart-item:nth-child(4){
+            height: 60%;
+            background: #ff0;
+        }
+        .chart-item:nth-child(5){
+            height: 90%;
+            background: #234;
+        }
+    </style>
+</head>
+<body>
+    <div class = "chart">
+        <div class = "chart-item"></div>
+        <div class = "chart-item"></div>
+        <div class = "chart-item"></div>
+        <div class = "chart-item"></div>
+        <div class = "chart-item"></div>
+    </div>
+</body>
+</html>
