@@ -12,7 +12,7 @@
 var parse = function(obj, str){
     str.replace('[', '.').replace(']', '').split('.').forEach( (item, index) => obj && (obj = obj[item]));
     return obj;
-}
+}q
 
 var object = {
  b: { c: 4 }, d: [{ e: 5 }, { e: 6 }]
