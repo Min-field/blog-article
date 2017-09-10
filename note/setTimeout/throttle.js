@@ -11,7 +11,7 @@ var throttle = function(fn, gap){
         if(lastTime && lastTime + gap < currTime){
             timer && clearTimeout(timer);
             timer = setTimeout(function(){        // 保证在结束的时间执行一次
-                lastTime = currTime; 
+                lastTime = currTime;              // 这里的lastTime是指上一次的fn执行时间
                 fn.apply(content, args); 
             }, gap); 
         } else {
